@@ -7,3 +7,44 @@
 .hidden {
 	display: none;
 }
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-inline: 45px;
+	text-align: center;
+}
+
+.hero__imageContainer {
+	width: 175px;
+	height: 175px;
+	overflow: hidden;
+	border-radius: 100%;
+	order: -1;
+}
+
+.hero__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hero__resume {
+	background-color: #ff6464;
+	font-weight: 500;
+	font-size: 1.2rem;
+	padding: 15px 20px;
+
+	box-shadow: none;
+	border: none;
+	color: white;
+	margin: 30px;
+}
+
+.hero__presentation {
+	width: 70%;
+	margin: auto;
+	margin-block: 20px;
+}
