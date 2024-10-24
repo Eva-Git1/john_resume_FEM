@@ -13,8 +13,9 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-inline: 45px;
 	text-align: center;
+	margin-inline: 50px;
+	margin-block: 20px;
 }
 
 .hero__imageContainer {
@@ -23,6 +24,7 @@
 	overflow: hidden;
 	border-radius: 250px;
 	order: -1;
+	margin-top: 50px;
 }
 
 .hero__image {
@@ -36,7 +38,7 @@
 	font-weight: 500;
 	font-size: 1.2rem;
 	padding: 15px 20px;
-
+	cursor: pointer;
 	box-shadow: none;
 	border: none;
 	color: white;
@@ -50,6 +52,10 @@
 }
 
 @media screen and (width > 750px) {
+	.section {
+		padding-inline: 45px;
+	}
+
 	.hero {
 		flex-direction: row;
 		justify-content: space-around;
@@ -75,4 +81,59 @@
 	.hero__resume {
 		margin-inline: 0;
 	}
+}
+
+.posts {
+	background-color: #edf7fa;
+	padding-block: 20px;
+}
+
+.posts__header {
+	/*
+	display: flex;
+	justify-content: space-between;
+	*/
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.posts__header > h2 {
+	font-size: 1.3rem;
+	font-weight: lighter;
+}
+
+.posts__header > button {
+	font-size: 1rem;
+	font-weight: normal;
+	border: none;
+	background-color: transparent;
+	color: #00a8cc;
+	display: none;
+}
+
+.posts__item {
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	padding: 20px;
+}
+
+.posts__infos {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+	align-items: center;
+}
+
+.posts__title {
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+}
+
+.posts__container {
+	margin-inline: 15px;
+}
+
+.posts__abstract {
+	font-size: 1rem;
 }
