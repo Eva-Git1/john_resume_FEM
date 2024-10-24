@@ -137,3 +137,15 @@
 .posts__abstract {
 	font-size: 1rem;
 }
+
+@media screen and (width > 1024px) {
+	.posts__container {
+		display: flex;
+		gap: 40px;
+		margin-inline: 0;
+	}
+
+	.posts__header {
+		text-align: start;
+	}
+}
